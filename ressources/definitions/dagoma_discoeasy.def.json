@@ -1,0 +1,126 @@
+{
+    "id": "dagoma_discoeasy200",
+    "version": 2,
+    "name": "DAGOMA DiscoEasy200",
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "Delphin PETER",
+        "manufacturer": "DAGOMA",
+        "category": "Other",
+        "file_formats": "text/x-gcode",
+        "platform": "dagoma_discoeasy200_plateform.stl",
+        "platform_offset": [-105, -57, 110]
+    },
+
+    "overrides": {
+        "machine_name": { "default_value": "DAGOMA DiscoEasy" },
+        "machine_start_gcode": {
+            "default_value": "; -- START GCODE --\nG90   ;absolute positioning\nM106 S250 ;fan on for the palpeur\nG28 X Y\nG1 X50\nM109 S180\nG28\nM104 S210\nG29\nM107 ;start with the fan off\nG1 X100 Y20 F3000\nG1 Z0.5\nM109 S210\nM82 ;set extruder to absolute mode\nG92 E0 ;zero the extruded length\nG1 F200 E10 ;extrude 10mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 Z3\nG1 F3600\n; -- end of START GCODE --"
+        },
+        "machine_end_gcode": {
+            "default_value": "; -- END GCODE --\nM104 S0\nM106 S255   ;start fan full power\nM140 S0   ;heated bed heater off (if you have it)\nG91   ;relative positioning\nG1 E-1 F300 ;retract the filament a bit before lifting the nozzle, to release some of the pressure\nG1 Z+3 F3600  ;move Z up a bit and retract filament even more\nG90\nG28 X Y\nM107    ;stop fan\nM84   ;shut down motors\n; -- end of END GCODE --"
+        },
+        "machine_width": {
+            "default_value": 200
+        },
+        "machine_depth": {
+            "default_value": 200
+        },
+        "machine_height": {
+            "default_value": 200
+        },
+        "machine_heated_bed": {
+            "default_value": false
+        },
+        "machine_center_is_zero": {
+            "default_value": false
+        },
+        "machine_gcode_flavor": {
+            "default_value": "RepRap (Marlin/Sprinter)"
+        },
+        "material_print_temperature": {
+            "default_value": 210
+        },
+        "material_bed_temperature": {
+            "default_value": 0
+        },
+        "material_diameter": {
+            "default_value": 1.75
+        },
+        "layer_height": {
+            "default_value": 0.2
+        },
+        "layer_height_0": {
+            "default_value": 0.2
+        },
+        "wall_line_count": {
+            "default_value": 3
+        },
+        "wall_thickness": {
+            "default_value": 1.2
+        },
+        "top_bottom_thickness": {
+            "default_value": 1.2
+        },
+        "infill_sparse_density": {
+            "default_value": 20
+        },
+        "infill_overlap": {
+            "default_value": 15
+        },
+        "speed_print": {
+            "default_value": 60
+        },
+        "speed_travel": {
+            "default_value": 60
+        },
+        "speed_layer_0": {
+            "default_value": 30
+        },
+        "speed_wall_x": {
+            "default_value": 35
+        },
+        "speed_wall_0": {
+            "default_value": 30
+        },
+        "speed_infill": {
+            "default_value": 80
+        },
+        "speed_topbottom": {
+            "default_value": 35
+        },
+        "skirt_brim_speed": {
+            "default_value": 35
+        },
+        "skirt_line_count": {
+            "default_value": 4
+        },
+        "skirt_brim_minimal_length": {
+            "default_value": 30
+        },
+        "skirt_gap": {
+            "default_value": 6
+        },
+        "cool_fan_full_at_height": {
+            "default_value": 0.4
+        },
+        "support_enable": {
+            "default_value": false
+        },
+        "gantry_height": {
+            "default_value": 10
+        },
+        "machine_head_with_fans_polygon":
+        {
+            "default_value":
+            [
+                [ -17, 70 ],
+                [ -17, -40 ],
+                [ 17, 70 ],
+                [ 17, -40 ]
+            ]
+        }
+		
+    }
+}
