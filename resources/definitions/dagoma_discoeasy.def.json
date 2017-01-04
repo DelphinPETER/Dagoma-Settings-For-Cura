@@ -1,13 +1,13 @@
 {
     "id": "dagoma_discoeasy200",
     "version": 2,
-    "name": "DAGOMA DiscoEasy200",
+    "name": "DiscoEasy200",
     "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
         "author": "Delphin PETER",
         "manufacturer": "DAGOMA",
-        "category": "Other",
+        "category": "Dagoma",
         "file_formats": "text/x-gcode",
         "platform": "dagoma_discoeasy200_plateform.stl",
         "platform_offset": [-105, -57, 110]
