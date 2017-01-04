@@ -14,6 +14,8 @@ Par défaut, sous Windows 64bits :
   - `.\resources\quality\fin.inst.cfg`
   - `.\resources\quality\rapide.inst.cfg`
   - `.\resources\quality\standard.inst.cfg`
+- Les paramètres des différents filaments :
+  - `.\resources\materials\*.xml.fdm_material`
 
 **Attention ces fichiers vous sont fournis sans garantie**. Je ne pourrais être tenu responsable d'un quelconque dommage causé à votre imprimante 3D. A vous de bien vérifier les paramètres avant de lancer l'impression.
 
