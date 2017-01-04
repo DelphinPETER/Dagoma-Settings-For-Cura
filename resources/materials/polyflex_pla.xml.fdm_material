@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Créé par Delphin PETER le 02/01/2017
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>PolyFlex</brand>
+            <material>PLA</material>
+            <color>Generic</color>
+			<label>PolyFlex - PLA</label>
+        </name>
+    </metadata>
+    <properties>
+        <density>1.24</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">230</setting>
+    </settings>
+</fdmmaterial>

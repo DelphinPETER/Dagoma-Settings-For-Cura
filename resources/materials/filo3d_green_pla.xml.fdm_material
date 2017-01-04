@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Créé par Delphin PETER le 02/01/2017
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Filo3D</brand>
+            <material>PLA</material>
+            <color>Vert</color>
+			<label>Filo3D - PLA Vert</label>
+        </name>
+        <color_code>#78be20</color_code>
+    </metadata>
+    <properties>
+        <density>1.24</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">200</setting>
+    </settings>
+</fdmmaterial>
