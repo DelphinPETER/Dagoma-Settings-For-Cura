@@ -1,4 +1,4 @@
-## Vous possédez un imprimante 3D DiscoEasy200 de chez DAGOMA et vous désirez passer de CuraByDagoma à Cura 2.3.
+## Vous possédez un imprimante 3D de chez DAGOMA et vous désirez passer de CuraByDagoma à Cura 2.3.
 Voici les fichiers qui vous permettront de retrouver les paramètres par défaut de CuraByDagoma dans Cura version 2.3
 
 Les fichiers sont à copier dans le dossier d'installation de Cura.
