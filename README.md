@@ -1,4 +1,7 @@
 ## Vous possédez un imprimante 3D de chez DAGOMA et vous désirez passer de CuraByDagoma à Cura 2.3.
+
+##ATTENTION CERTAINS PARAMÈTRES NE SONT PAS ENCORE TRANSFÉRÉS, CES FICHIERS SONT PARTAGÉS POUR ÊTRE TESTÉS.
+
 Voici les fichiers qui vous permettront de retrouver les paramètres par défaut de CuraByDagoma dans Cura version 2.3
 
 Les fichiers sont à copier dans le dossier d'installation de Cura.
@@ -22,4 +25,4 @@ Par défaut, sous Windows 64bits :
 ##ASTUCE :
 
 Si vous souhaitez accélérer le chargement de Cura, vous pouvez supprimer les imprimantes que vous n'utilisez pas.
-`.\resources\definitions\*.def.json`**SAUF fdmprinter.def.json**
+`.\resources\definitions\*.def.json` **SAUF fdmprinter.def.json** et **custom.def.json** (si vous souhaitez pouvoir ajouter une imprimante personnalisable.)
