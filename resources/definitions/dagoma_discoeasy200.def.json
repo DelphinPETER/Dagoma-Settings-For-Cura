@@ -25,6 +25,7 @@
 		"machine_width": { "default_value": 200 },
 		"machine_depth": { "default_value": 200 },
 		"machine_height": { "default_value": 200 },
+		"machine_extruder_count": { "default_value": 1 },
 		"machine_nozzle_size": { "default": 0.4 },
 		"machine_head_with_fans_polygon":
 		{ "default_value":
@@ -35,6 +36,7 @@
 				[ 17, -40 ]
 			]
 		},
+		"machine_gcode_flavor": { "default_value": "DiscoGCode" },
 		"retraction_enable": { "default_value": true },
 		"machine_heated_bed": { "default_value": false },
 		"machine_center_is_zero": { "default_value": false },
@@ -42,6 +44,7 @@
 		"retraction_amount": { "default_value": 3.5 },
 		"bottom_thickness": { "default_value": 0.26 },
 		"cool_min_layer_time": { "default_value": 10 },
+		"cool_fan_enabled": { "default_value": true },
 		"retraction_min_travel": { "default_value": 1.5 },
 		"retraction_hop": { "default_value": 0 },
 		"skirt_line_count":	{ "default_value": 2 },
@@ -55,6 +58,7 @@
 		"cool_lift_head": { "default_value": false },
 		"support_angle": { "default_value": 50 },
 		"support_pattern": { "default_value": "Lines" },
+		"infill_overlap": { "default_value": 10 },
 		"support_infill_rate": { "default_value": 20 },
 		"support_xy_distance": { "default_value": 0.7 },
 		"support_z_distance": { "default_value": 0.15 },
@@ -68,6 +72,8 @@
 		"raft_airgap": { "default_value": 0.22 },
 		"raft_surface_layers": { "default_value": 2 },
 		"meshfix_union_all": { "default_value": true },
+		"meshfix_union_all_remove_holes": { "default_value": false },
 		"meshfix_extensive_stitching": { "default_value": false },
+		"meshfix_keep_open_polygons": { "default_value": false }
 	}
 }
