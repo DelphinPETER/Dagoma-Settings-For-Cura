@@ -11,7 +11,8 @@
         "file_formats": "text/x-gcode",
         "platform": "dagoma_discoeasy200_plateform.stl",
         "platform_offset": [-105, -57, 110],
-        "has_machine_quality": true
+        "preferred_material": "*chromatik_pla*",
+        "preferred_quality": "*discoeasy200_standard*"
         },
 
     "overrides": {
