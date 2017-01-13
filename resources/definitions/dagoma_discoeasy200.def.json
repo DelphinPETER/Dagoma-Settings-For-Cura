@@ -76,6 +76,7 @@
         "meshfix_union_all_remove_holes": { "default_value": false },
         "meshfix_extensive_stitching": { "default_value": false },
         "meshfix_keep_open_polygons": { "default_value": false },
-        "material_diameter": { "default_value": 1.75 }
+        "material_diameter": { "default_value": 1.75 },
+        "adhesion_type": { "default_value": "brim" }
     }
 }
