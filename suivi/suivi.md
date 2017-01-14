@@ -1,0 +1,78 @@
+
+
+Definition des caracteristiques mecaniques
+
+Variables CbD                 | Valeurs       | Variables Cura | Fichiers | Vérifié | Commentaire
+------------------------------|---------------|----------------|----------|---------|------------
+machine_name                  | DiscoEasy200  | machine_name   | JSON     |  OK     | 
+machine_type                  | DiscoEasy200  |                |          |  OK     | 
+machine_width                 | 211           |                |          |  OK     | 
+machine_depth                 | 211           |                |          |  OK     | 
+machine_height                | 205           |                |          |  OK     | 
+extruder_amount               | 1             |                |          |  OK     | 
+has_heated_bed                | False         |                |          |  OK     | 
+machine_center_is_zero        | False         |                |          |  OK     | 
+nozzle_size                   | 0.4           |                |          |  OK     | 
+extruder_head_size_min_x      | 17            |                |          |  OK     | 
+extruder_head_size_min_y      | 40            |                |          |  OK     | 
+extruder_head_size_max_x      | 17            |                |          |  OK     | 
+extruder_head_size_max_y      | 70            |                |          |  OK     |  
+extruder_head_size_height     | 10            |                |          |  OK     | 
+gcode_flavor                  | DiscoGCode    |                |          |  OK     | 
+retraction_enable             | True          |                |          |  OK     | 
+machine_shape                 | Square        |                |          |         | 
+
+Definition de la retraction et de la premiere couche
+
+Variables CbD                 | Valeurs       | Variables Cura | Fichiers | Vérifié | Commentaire
+------------------------------|---------------|----------------|----------|---------|------------
+retraction_speed              | 50            |                |          |  OK     | 
+retraction_amount             | 3.5           |                |          |  OK     | 
+bottom_thickness              | 0.26          |                |          |  OK     | 
+cool_min_layer_time           | 10            |                |          |  OK     | 
+fan_enabled                   | True          |                |          |  OK     | 
+layer0_width_factor           | 100           |                |          |         |VOIR si layer_0_z_overlap avec une opération pour le pourcentage correspond
+object_sink                   | 0             |                |          |         | 
+
+Definition des caracteristiques du support
+
+Variables CbD                    | Valeurs    | Variables Cura | Fichiers | Vérifié | Commentaire
+---------------------------------|------------|----------------|----------|---------|------------
+retraction_min_travel            | 1.5        |                |          |  OK     | 
+retraction_hop                   | 0          |                |          |  OK     | 
+skirt_line_count                 | 2          |                |          |  OK     | 
+skirt_gap                        | 3          |                |          |  OK     | 
+skirt_minimal_length             | 150        |                |          |  OK     | 
+fan_full_height                  | 0.5        |                |          |  OK     | 
+fan_speed                        | 50         |                |          |  OK     | 
+fan_speed_max                    | 100        |                |          |  OK     | 
+cool_head_lift                   | False      |                |          |  OK     | 
+support_type                     | Lines      |                |          |  OK     | 
+support_angle                    | 50         |                |          |  OK     | 
+support_fill_rate                | 20         |                |          |  OK     | 
+support_xy_distance              | 0.7        |                |          |  OK     | 
+support_z_distance               | 0.15       |                |          |  OK     | 
+spiralize                        | False      |                |          |  OK     | 
+brim_line_count                  | 10         |                |          |  OK     | 
+raft_margin                      | 5          |                |          |  OK     |
+raft_base_thickness              | 0.3        |                |          |  OK     | 
+raft_base_linewidth              | 1          |                |          |  OK     | 
+raft_interface_thickness         | 0.27       |                |          |  OK     | 
+raft_interface_linewidth         | 0.4        |                |          |  OK     | 
+raft_airgap                      | 0.22       |                |          |  OK     | 
+raft_surface_layers              | 2          |                |          |  OK     | 
+fix_horrible_union_all_type_a    | True       |                |          |  OK     | 
+fix_horrible_union_all_type_b    | False      |                |          |  OK     | 
+fix_horrible_use_open_bits       | False      |                |          |  OK     | 
+fix_horrible_extensive_stitching | False      |                |          |  OK     | 
+
+Variables CbD                    | Valeurs    | Variables Cura | Fichiers | Vérifié | Commentaire
+---------------------------------|------------|----------------|----------|---------|------------
+simple_mode                      | False      |                |          |  OK     | 
+retraction_combing               | True       |                |          |  OK     | 
+retraction_minimal_extrusion     | 0.02       |                |          |  OK     | 
+cool_min_feedrate                | 20         |                |          |  OK     | 
+solid_top                        | True       |                |          |  OK     | 
+solid_bottom                     | True       |                |          |  OK     | 
+fill_overlap                     | 25         |                |          |  OK     | 
+raft_line_spacing                | 3          |                |          |  OK     |raft_interface_line_spacing raft_base_line_spacing raft_surface_line_spacin
