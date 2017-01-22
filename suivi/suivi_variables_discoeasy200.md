@@ -24,15 +24,15 @@ machine_shape                 | Square        |                |          |     
 
 Definition de la retraction et de la premiere couche
 
-Variables CbD                 | Valeurs       | Variables Cura | Fichiers | Vérifié | Commentaire
-------------------------------|---------------|----------------|----------|---------|------------
-retraction_speed              | 50            |                |          |  OK     | 
-retraction_amount             | 3.5           |                |          |  OK     | 
-bottom_thickness              | 0.26          |                |          |  OK     | 
-cool_min_layer_time           | 10            |                |          |  OK     | 
-fan_enabled                   | True          |                |          |  OK     | 
-layer0_width_factor           | 100           |                |          |         |VOIR si layer_0_z_overlap avec une opération pour le pourcentage correspond
-object_sink                   | 0             |                |          |         | 
+Variables CbD                 | Valeurs       | Variables Cura       | Fichiers | Vérifié | Commentaire
+------------------------------|---------------|----------------------|----------|---------|------------
+retraction_speed              | 50            |                      |          |  OK     | 
+retraction_amount             | 3.5           |                      |          |  OK     | 
+bottom_thickness              | 0.26          | top_bottom_thickness | Profil   |  OK     | Défini par top_bottom_thickness
+cool_min_layer_time           | 10            |                      |          |  OK     | 
+fan_enabled                   | True          |                      |          |  OK     | 
+layer0_width_factor           | 100           |                      |          |         |VOIR si layer_0_z_overlap avec une opération pour le pourcentage correspond
+object_sink                   | 0             |                      |          |         | 
 
 Definition des caracteristiques du support
 
