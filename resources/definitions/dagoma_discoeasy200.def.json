@@ -68,7 +68,6 @@
         "meshfix_extensive_stitching": { "default_value": false },
         "meshfix_keep_open_polygons": { "default_value": false },
         
-        "bottom_thickness": { "default_value": 0.26 },
         "infill_overlap": { "default_value": 10 },
         "material_diameter": { "default_value": 1.75 },
         "adhesion_type": { "default_value": "brim" },        
