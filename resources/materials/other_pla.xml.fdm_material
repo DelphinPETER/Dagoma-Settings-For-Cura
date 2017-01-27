@@ -5,7 +5,7 @@ Créé par Delphin PETER le 02/01/2017
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
-            <brand>Autre</brand>
+            <brand>Generic</brand>
             <material>PLA</material>
             <color>Generic</color>
             <label>Autre - PLA</label>
@@ -17,5 +17,12 @@ Créé par Delphin PETER le 02/01/2017
     </properties>
     <settings>
         <setting key="print temperature">205</setting>
+        <setting key="hardware compatible">no</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Dagoma" product="DiscoEasy200"/>
+            <setting key="hardware compatible">yes</setting>
+        </machine>
+        
     </settings>
 </fdmmaterial>
