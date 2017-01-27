@@ -1,9 +1,11 @@
-﻿'Cet outil permet de copier les fichiers de profil vierge suivant une liste prédéfini de matrériaux
-'et de corriger dans chaque fichier le nom du matériau correspondant
-
+'Cet outil permet de copier les fichiers de profil vierge suivant une liste prédéfini de matrériaux
+'et de corriger dans chaque fichier le nom du matériau correspondant et le nom de l'imprimante
 
 Const ForReading = 1    
 Const ForWriting = 2
+
+Dim printName
+printName = "discovery200"
 
 'Défini la liste des matériaux à créer
 Dim materialList : Set materialList = CreateObject("System.Collections.ArrayList")
@@ -52,8 +54,11 @@ Sub CreateFile(ByVal qualitySourceFile, ByVal materialName)
     Set filesys=CreateObject("Scripting.FileSystemObject")
     filesys.CopyFile qualitySourceFile, newFileName    
     
+    'Remplacement du nom de l'imprimante
+    strNewQualityText = Replace(strText, "PRINT_NAME", printName)
+
     'Remplacement de la valeur generique par la nom du materiau
-    strNewQualityText = Replace(strText, "AUTOGEN", materialName)
+    strNewQualityText = Replace(strNewQualityText, "AUTOGEN", materialName)
     
     'Ecriture dans fichier de destination
     Set objFile = objFSO.OpenTextFile(newFileName, ForWriting)
