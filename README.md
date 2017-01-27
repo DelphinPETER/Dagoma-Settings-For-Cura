@@ -10,7 +10,7 @@ Par défaut, sous Windows 64bits :
 `C:\Program Files\Cura 2.3`
 
 - Les paramètres de l'imprimante :
-  - `.\resources\definitions\dagoma_discoeasy200.def.json`
+  - `.\resources\definitions\discoeasy200.def.json`
 - Le modèle 3D de l'imprimante :
   - `.\resources\meshes\dagoma_discoeasy200_plateform.stl`
 - Les paramètres de qualité d'impression :
