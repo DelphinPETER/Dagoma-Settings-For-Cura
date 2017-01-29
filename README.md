@@ -9,12 +9,12 @@ Les fichiers sont à copier dans le dossier d'installation de Cura.
 Par défaut, sous Windows 64bits :
 `C:\Program Files\Cura 2.3`
 
-- Les paramètres de l'imprimante :
-  - `.\resources\definitions\discoeasy200.def.json`
-- Le modèle 3D de l'imprimante :
-  - `.\resources\meshes\dagoma_discoeasy200_plateform.stl`
+- Les paramètres des imprimantes :
+  - `.\resources\definitions\*.def.json`
+- Le modèle 3D des imprimantes :
+  - `.\resources\meshes\*_plateform.stl`
 - Les paramètres de qualité d'impression :
-  - `.\resources\quality\dagoma_discoeasy200\*.inst.cfg`
+  - `.\resources\quality\dagoma_*\*.inst.cfg`
 - Les paramètres des différents filaments :
   - `.\resources\materials\*.xml.fdm_material`
 
