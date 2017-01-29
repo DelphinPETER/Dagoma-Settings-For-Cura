@@ -3,9 +3,7 @@
 
 Const ForReading = 1    
 Const ForWriting = 2
-
-Dim printName
-printName = "discovery200"
+Const printName = "discoeasy200"
 
 'Défini la liste des matériaux à créer
 Dim materialList : Set materialList = CreateObject("System.Collections.ArrayList")
@@ -23,9 +21,9 @@ materialList.add("polywood_pla")
 
 'Défini la liste des qualités disponible
 Dim qualityList : Set qualityList = CreateObject("System.Collections.ArrayList")
-qualityList.add("AUTOGEN_fin.inst.cfg")
-qualityList.add("AUTOGEN_rapide.inst.cfg")
-qualityList.add("AUTOGEN_standard.inst.cfg")
+qualityList.add("PRINTNAME_MATERIAU_fin.inst.cfg")
+qualityList.add("PRINTNAME_MATERIAU_rapide.inst.cfg")
+qualityList.add("PRINTNAME_MATERIAU_standard.inst.cfg")
 
 Dim strText'Fichier en cour de lecture
 
@@ -50,15 +48,16 @@ Next
 Sub CreateFile(ByVal qualitySourceFile, ByVal materialName)
     
     'Creation du nouveau fichier
-    newFileName = Replace(qualitySourceFile,"AUTOGEN",materialName)
+    newFileName = Replace(qualitySourceFile,"MATERIAU",materialName)
+    newFileName = Replace(newFileName,"PRINTNAME",printName)
     Set filesys=CreateObject("Scripting.FileSystemObject")
     filesys.CopyFile qualitySourceFile, newFileName    
     
     'Remplacement du nom de l'imprimante
-    strNewQualityText = Replace(strText, "PRINT_NAME", printName)
+    strNewQualityText = Replace(strText, "PRINTNAME", printName)
 
-    'Remplacement de la valeur generique par la nom du materiau
-    strNewQualityText = Replace(strNewQualityText, "AUTOGEN", materialName)
+    'Remplacement de la variable par la nom du materiau
+    strNewQualityText = Replace(strNewQualityText, "MATERIAU", materialName)
     
     'Ecriture dans fichier de destination
     Set objFile = objFSO.OpenTextFile(newFileName, ForWriting)
