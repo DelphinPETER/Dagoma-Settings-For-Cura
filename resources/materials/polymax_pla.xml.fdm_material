@@ -16,11 +16,12 @@ Créé par Delphin PETER le 02/01/2017
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">210</setting>
         <setting key="hardware compatible">no</setting>
 
         <machine>
             <machine_identifier manufacturer="Dagoma" product="DiscoEasy200"/>
+            <machine_identifier manufacturer="Dagoma" product="Discovery200"/>
+            <setting key="print temperature">210</setting>
             <setting key="hardware compatible">yes</setting>
         </machine>
         

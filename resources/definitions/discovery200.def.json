@@ -1,0 +1,78 @@
+{
+    "id": "discovery200",
+    "version": 2,
+    "name": "Discovery200",
+    "inherits": "dagoma",
+    "metadata": {
+        "visible": true,
+        "author": "Delphin PETER",
+        "manufacturer": "DAGOMA",
+        "category": "Dagoma",
+        "file_formats": "text/x-gcode",
+        "platform": "dagoma_discovery200_plateform.stl",
+        "platform_offset": [-105, -58.5, 113.3],
+        "has_machine_materials": true,
+        "preferred_material": "*chromatik_pla*",
+        "preferred_quality": "*chromatik_pla_standard*",
+        "has_machine_quality": true
+        },
+
+    "overrides": {
+        "machine_name": { "default_value": "Discovery200" },
+        "machine_start_gcode": {
+            "default_value": "; -- START GCODE --\n;Vitesse impression = {speed_print}\n;Vitesse déplacement = {speed_travel}\n;Température : {material_print_temperature}\nG91        ;relative positioning\nG1 Z7\nG90        ;absolute positioning\nG28 X\nM106 S255\nM109 S180            ; wait Hotend temperature\nM104 S{material_print_temperature}    ; set Hotend temperature\n;M190 S60             ; wait Bed temperature\nG28 X\nG28 Y\nG01 X20 Y100\nG28 Z\n;bloc palpeur\n;{palpeur}\n;bloc Offset\nG92 Z10\nG91        ;relative positioning\nG1 Z0.5\nG90 \nG92 Z0\nG1 Z3\nG1 X100 Y200 F3000\nG1 Z2\nM104 S{material_print_temperature}\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG92 E0 ;zero the extruded length\nG1 F200 E3 ;extrude 10mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F3000\n; -- end of START GCODE --"
+        },
+        "machine_end_gcode": {
+            "default_value": "; -- END GCODE --\nM104 S0        ;extruder heater off\nM106 S255        ;start fan full power\nM140 S0        ;heated bed heater off (if you have it)\nG91        ;relative positioning\nG1 E-1 F300    ;retract the filament a bit before lifting the nozzle, to release some of the pressure\nG1 Z+3 E-2 F3000    ;move Z up a bit and retract filament even more\nG28 X0 Y0    ;move X/Y to min endstops, so the head is out of the way;\nG4 P360000\nM908        ;stop fan\nM84        ;shut down motors\n; -- end of END GCODE --"
+        },
+        "machine_width": { "default_value": 200 },
+        "machine_depth": { "default_value": 200 },
+        "machine_height": { "default_value": 200 },
+        "machine_center_is_zero": { "default_value": false },
+        "machine_extruder_count": { "default_value": 1 },
+        "machine_heated_bed": { "default_value": false },
+        "machine_head_with_fans_polygon": { "default_value": [ [-15, 115], [-15, -40], [15, 115], [15, -40] ] },
+        "machine_gcode_flavor": { "default_value": "DiscoGCode" },
+        "machine_nozzle_size": { "default": 0.4 },
+        
+        "retraction_enable": { "default_value": true },
+        "retraction_amount": { "default_value": 3.5 },
+        "retraction_speed": { "default_value": 50 },
+        "retraction_min_travel": { "default_value": 1.5 },
+        "retraction_hop": { "default_value": 0 },
+        
+        "cool_min_layer_time": { "default_value": 10 },
+        "cool_fan_enabled": { "default_value": true },
+        "cool_lift_head": { "default_value": false },
+        "cool_fan_full_at_height": { "default_value": 0.5 },
+        "cool_fan_speed": { "maximum_value": "100", "default_value": 50 },
+        
+        "skirt_line_count":    { "default_value": 2 },
+        "skirt_gap": { "default_value": 3 },
+        "skirt_brim_minimal_length": { "default_value": 150 },
+        
+        "support_angle": { "default_value": 50 },
+        "support_pattern": { "default_value": "lines" },
+        "support_infill_rate": { "default_value": 20 },
+        "support_xy_distance": { "default_value": 0.7 },
+        "support_z_distance": { "default_value": 0.15 },
+        
+        "raft_margin": { "default_value": 5 },
+        "raft_base_thickness": { "default_value": 0.3 },
+        "raft_base_line_width": { "default_value": 1 },
+        "raft_interface_thickness": { "default_value": 0.27 },
+        "raft_interface_line_width": { "default_value": 0.4 },
+        "raft_airgap": { "default_value": 0.22 },
+        "raft_surface_layers": { "default_value": 2 },
+        
+        "meshfix_union_all": { "default_value": true },
+        "meshfix_union_all_remove_holes": { "default_value": false },
+        "meshfix_extensive_stitching": { "default_value": false },
+        "meshfix_keep_open_polygons": { "default_value": false },
+        
+        "infill_overlap": { "default_value": 10 },
+        "material_diameter": { "default_value": 1.75 },    
+        "magic_spiralize": { "default_value": false },
+        "brim_line_count": { "default_value": 10 }
+    }
+}
