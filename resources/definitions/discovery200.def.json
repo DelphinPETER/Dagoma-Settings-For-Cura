@@ -2,7 +2,7 @@
     "id": "discovery200",
     "version": 2,
     "name": "Discovery200",
-    "inherits": "dagoma",
+    "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
         "author": "Delphin PETER",
