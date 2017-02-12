@@ -9,7 +9,7 @@
         "manufacturer": "DAGOMA",
         "category": "Dagoma",
         "file_formats": "text/x-gcode",
-        "platform": "dagoma_discoeasy200_plateform.stl",
+        "platform": "dagoma_discoeasy200_platform.stl",
         "platform_offset": [-105, -57, 110],
         "has_machine_materials": true,
         "preferred_material": "*chromatik_pla*",

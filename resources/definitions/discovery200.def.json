@@ -9,7 +9,7 @@
         "manufacturer": "DAGOMA",
         "category": "Dagoma",
         "file_formats": "text/x-gcode",
-        "platform": "dagoma_discovery200_plateform.stl",
+        "platform": "dagoma_discovery200_platform.stl",
         "platform_offset": [-105, -58.5, 113.3],
         "has_machine_materials": true,
         "preferred_material": "*chromatik_pla*",
