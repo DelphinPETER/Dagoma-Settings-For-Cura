@@ -27,3 +27,7 @@ ATTENTION : vous ne pourrez pas installer d'autres imprimantes autres que celles
 - `.\resources\definitions\*.def.json` **SAUF fdmprinter.def.json  et  fdmextruder.def.json**
 - `.\resources\materials\*.xml.fdm_material`
 - `.\resources\quality\*.inst.cfg`
+
+Si vous souhaitez donner les couleurs de Dagoma à Cura, vous pouvez copier les fichiers présents dans le dossier `theme_dagoma`
+
+![GitHub Logo](/theme_dagoma/preview.png)
