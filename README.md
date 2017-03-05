@@ -20,13 +20,15 @@ Par défaut, sous Windows 64bits :
 
 **Attention ces fichiers vous sont fournis sans garantie**. Je ne pourrais être tenu responsable d'un quelconque dommage causé à votre imprimante 3D. A vous de bien vérifier les paramètres avant de lancer l'impression.
 
-##ASTUCE :
+##ASTUCES :
 
 Si vous souhaitez accélérer le chargement de Cura, vous pouvez supprimer les fichiers ne correspondant pas aux imprimantes Dagoma.
 ATTENTION : vous ne pourrez pas installer d'autres imprimantes autres que celles de Dagoma par la suite (sauf en réinstallation Cura).
 - `.\resources\definitions\*.def.json` **SAUF fdmprinter.def.json  et  fdmextruder.def.json**
 - `.\resources\materials\*.xml.fdm_material`
 - `.\resources\quality\*.inst.cfg`
+
+Si vous souhaitez que Cura enresgitre le fichier sur votre carte SD directement avec le bon nom `dagoma0.g`, il suffit de copier le fichier `hack\RemovableDriveOutputDevice.py` dans le dossier `plugins\RemovableDriveOutputDevice`
 
 Si vous souhaitez donner les couleurs de Dagoma à Cura, vous pouvez copier les fichiers présents dans le dossier `theme_dagoma`
 
