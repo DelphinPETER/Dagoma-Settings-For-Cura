@@ -28,7 +28,7 @@ ATTENTION : vous ne pourrez pas installer d'autres imprimantes autres que celles
 - `.\resources\materials\*.xml.fdm_material`
 - `.\resources\quality\*.inst.cfg`
 
-Si vous souhaitez que Cura enresgitre le fichier sur votre carte SD directement avec le bon nom `dagoma0.g`, il suffit de copier le fichier `hack\RemovableDriveOutputDevice.py` dans le dossier `plugins\RemovableDriveOutputDevice`
+Si vous souhaitez que Cura enregistre le fichier sur votre carte SD directement avec le bon nom `dagoma0.g`, il suffit de copier le fichier `hack\RemovableDriveOutputDevice.py` dans le dossier `plugins\RemovableDriveOutputDevice`
 
 Si vous souhaitez donner les couleurs de Dagoma à Cura, vous pouvez copier les fichiers présents dans le dossier `theme_dagoma`
 
