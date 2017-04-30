@@ -4,11 +4,15 @@
 
 Voici les fichiers qui vous permettront de retrouver les paramètres par défaut de CuraByDagoma dans Cura version 2.5
 
-Les fichiers sont à copier dans le dossier d'installation de Cura.
+Ces fichiers sont à copier dans le dossier d'installation de Cura.
 
-Par défaut, sous Windows 64bits :
-`C:\Program Files\Cura 2.5`
+Dossier d'installation par défaut :
+- Sous Windows 64bits :
+  - `C:\Program Files\Cura 2.4`
+- Sous Linux :
+  - `/usr/share/cura`
 
+Liste des différents fichiers :
 - Les paramètres des imprimantes :
   - `.\resources\definitions\*.def.json`
 - Le modèle 3D des imprimantes :
