@@ -15,7 +15,7 @@ Par défaut, sous Windows 64bits :
   - `.\resources\meshes\*_plateform.stl`
 - Les paramètres de qualité d'impression :
   - `.\resources\quality\dagoma_*\*.inst.cfg`
-- Les paramètres des différents filaments :
+- Les paramètres des différents filaments : **Les filaments listés dans CuraByDagoma étant maintenant de base dans Cura il est nécessaire d'écraser les fichiers de base**
   - `.\resources\materials\*.xml.fdm_material`
 
 **Attention ces fichiers vous sont fournis sans garantie**. Je ne pourrais être tenu responsable d'un quelconque dommage causé à votre imprimante 3D. A vous de bien vérifier les paramètres avant de lancer l'impression.
