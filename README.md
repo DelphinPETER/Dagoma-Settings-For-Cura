@@ -8,8 +8,8 @@ Ces fichiers sont à copier dans le dossier d'installation de Cura.
 
 Dossier d'installation par défaut :
 - Sous Windows 64bits :
-  - `C:\Program Files\Cura 2.4`
-- Sous Linux :
+  - `C:\Program Files\Cura 2.5`
+- Sous Linux : **(Avec les droits root)**
   - `/usr/share/cura`
 
 Liste des différents fichiers :
