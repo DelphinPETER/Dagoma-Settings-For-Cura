@@ -1,14 +1,14 @@
-## Vous possédez un imprimante 3D de chez DAGOMA et vous désirez passer de CuraByDagoma à Cura 2.5.
+## Vous possédez un imprimante 3D de chez DAGOMA et vous désirez passer de CuraByDagoma à Cura 2.6.
 
 ##ATTENTION CERTAINS PARAMÈTRES NE SONT PAS ENCORE TRANSFÉRÉS, CES FICHIERS SONT PARTAGÉS POUR ÊTRE TESTÉS.
 
-Voici les fichiers qui vous permettront de retrouver les paramètres par défaut de CuraByDagoma dans Cura version 2.5
+Voici les fichiers qui vous permettront de retrouver les paramètres par défaut de CuraByDagoma dans Cura version 2.6
 
 Ces fichiers sont à copier dans le dossier d'installation de Cura.
 
 Dossier d'installation par défaut :
 - Sous Windows 64bits :
-  - `C:\Program Files\Cura 2.5`
+  - `C:\Program Files\Cura 2.6`
 - Sous Linux : **(Avec les droits root)**
   - `/usr/share/cura`
 
