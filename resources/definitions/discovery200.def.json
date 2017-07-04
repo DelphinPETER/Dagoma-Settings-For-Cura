@@ -70,7 +70,7 @@
         "meshfix_extensive_stitching": { "default_value": false },
         "meshfix_keep_open_polygons": { "default_value": false },
         
-        "infill_overlap": { "value": 10 },
+        "infill_overlap": { "value": 25 },
         "material_diameter": { "default_value": 1.75 },    
         "magic_spiralize": { "default_value": false },
         "brim_line_count": { "default_value": 10 }

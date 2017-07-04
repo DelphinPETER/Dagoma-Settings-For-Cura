@@ -74,5 +74,5 @@ retraction_minimal_extrusion     | 0.02       |                |          |     
 cool_min_feedrate                | 20         |                |          |         | 
 solid_top                        | True       |                |          |         | 
 solid_bottom                     | True       |                |          |         | 
-fill_overlap                     | 25         |                |          |         | 
+fill_overlap                     | 25         | infill_overlap | JSON     |  OK     | 
 raft_line_spacing                | 3          |                |          |         |raft_interface_line_spacing 
